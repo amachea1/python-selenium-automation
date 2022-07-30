@@ -1,11 +1,15 @@
 from selenium.webdriver.common.by import By
 from behave import given, when, then
+from time import sleep
 COLOR_OPTIONS = (By.CSS_SELECTOR,"variation_color_name li")
 CURRENT_COLOR = (By.CSS_SELECTOR, "variation_color_name, selection")
 
 @given('Open Amazon Product {product_id} page')
 def open_amazon_product(context, product_id):
     context.driver.get(f'https://www.amazon.com/dp/{product_id}/')
+
+#wait for 4 sec
+sleep(4)
 
 @then('Verify user can click through colors')
 def verify_click_colors(context):
