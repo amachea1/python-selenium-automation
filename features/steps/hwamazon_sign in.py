@@ -4,7 +4,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 
-driver.wait = WebDriverWait(driver, 10)
+driver.wait = WebDriverWait (driver, 10)
 
 @given('Open Amazon page')
 def open_amazon(context):
