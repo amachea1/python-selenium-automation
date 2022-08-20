@@ -6,5 +6,5 @@ class MainPage(Page):
 
     def open_amazon_home_page(self):
         self.open_page()
-##this step had me a bit confused, didn't know if I should
-#it on a page by iyself or put it on the cart page.
+##this step had me a bit confused, didn't know if I should put
+#it on a page by itself or put it on the cart page.
