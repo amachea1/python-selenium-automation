@@ -1,8 +1,10 @@
+from selenium.webdriver.common.by import By
 from pages.base_page import Page
 
 
-class SignInPage(Page):
+class MainPage(Page):
 
-    def open_page(self):
-        self.driver.get('https://www.amazon.com/')
-
+    def open_amazon_home_page(self):
+        self.open_page()
+##this step had me a bit confused, didn't know if I should
+#it on a page by iyself or put it on the cart page.
